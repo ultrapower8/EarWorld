@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:background="@color/white">
+        <ImageView
+            android:id="@+id/file_cover"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center"
+            android:layout_marginRight="15dp"
+            android:src="@drawable/icon_wav_file" />
+
+        <TextView
+            android:id="@+id/file_title"
+            android:layout_toRightOf="@id/file_cover"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="40dp"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:text="作为阿里云“云上贵州”项目总指挥,胡晓明很欣慰云上贵州已经成为全"
+            android:textColor="@color/contents_text"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/file_create_date"
+            android:layout_toRightOf="@id/file_cover"
+            android:layout_below="@id/file_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginRight="15dp"
+            android:text="2019/5/22"
+            android:textColor="@color/gray_dark"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/file_total_time"
+            android:layout_toRightOf="@id/file_create_date"
+            android:layout_below="@id/file_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="15dp"
+            android:layout_marginBottom="10dp"
+            android:text="35:59"
+            android:textColor="@color/gray_dark"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/file_size"
+            android:layout_toRightOf="@id/file_total_time"
+            android:layout_below="@id/file_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:text="366KB"
+            android:textColor="@color/gray_dark"
+            android:textSize="12sp" />
+
+        <ImageView
+            android:id="@+id/return_play_button"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_marginLeft="15dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/icon_return_play"
+            android:layout_alignParentRight="true" />
+
+        <com.taishi.library.Indicator
+            android:id="@+id/voice_indicator"
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="8dp"
+            android:visibility="gone"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:background="@color/transparent"
+            app:bar_color="@color/colorPrimaryBright"
+            app:bar_num="4"
+            app:duration="2000"
+            app:step_num="8" />
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/item_voice_parting_line"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="65dp"
+        android:layout_height="0.2dp"
+        android:background="@color/gray_light" />
+</LinearLayout>

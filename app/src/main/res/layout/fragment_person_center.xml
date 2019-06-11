@@ -1,0 +1,356 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.nickole.earworld.personcenter.PersonCenterFragment">
+
+    <ScrollView android:layout_height="wrap_content"
+        android:layout_width="match_parent">
+        <LinearLayout android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="20dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:text="我的"
+                    android:textStyle="bold"
+                    android:textColor="@color/contents_text"
+                    android:textSize="24sp" />
+
+                <Button
+                    android:id="@+id/setting_button"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/icon_setting" />
+
+            </LinearLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/my_information_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:focusable="true"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:background="@drawable/my_button_top_selector">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/user_head_image"
+                    android:layout_width="64dp"
+                    android:layout_height="64dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginStart="15dp"
+                    android:adjustViewBounds="false"
+                    android:cropToPadding="false"
+                    android:src="@drawable/head_image" />
+
+                <TextView
+                    android:id="@+id/nickname_text_view"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_alignTop="@+id/user_head_image"
+                    android:layout_marginStart="10dp"
+                    android:layout_toEndOf="@+id/user_head_image"
+                    android:text="Nickole"
+                    android:textColor="@color/contents_text"
+                    android:textSize="24sp" />
+
+                <ImageView
+                    android:id="@+id/sex"
+                    android:layout_width="16dp"
+                    android:layout_height="16dp"
+                    android:layout_alignTop="@+id/nickname_text_view"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_toEndOf="@+id/nickname_text_view"
+                    android:src="@drawable/icon_boy" />
+
+                <LinearLayout android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_alignBottom="@+id/user_head_image"
+                    android:layout_alignStart="@+id/nickname_text_view"
+                    android:layout_marginBottom="5dp"
+                    android:id="@+id/linearLayout"
+                    android:layout_alignLeft="@+id/nickname_text_view">
+
+                    <ImageView
+                        android:layout_width="16dp"
+                        android:layout_height="16dp"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="2dp"
+                        android:layout_marginRight="2dp"
+                        android:src="@drawable/icon_diamond" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="金钻用户"
+                        android:layout_gravity="center"
+                        android:textColor="@color/gray_dark"
+                        android:textSize="12sp" />
+                </LinearLayout>
+
+                <View
+                    android:id="@+id/view3"
+                    android:layout_width="match_parent"
+                    android:layout_height="0.2dp"
+                    android:layout_below="@+id/user_head_image"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@color/gray_light_light" />
+
+                <ImageView
+                    android:id="@+id/imageView"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:layout_margin="15dp"
+                    android:src="@drawable/icon_to_right" />
+
+            </RelativeLayout>
+
+            <LinearLayout android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginBottom="15dp"
+                android:background="@drawable/my_button_bottom_normal"
+                android:orientation="vertical">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:paddingTop="10dp"
+                    android:paddingRight="10dp"
+                    android:paddingLeft="10dp"
+                    android:weightSum="3">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="66"
+                        android:textColor="@color/contents_text"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="105"
+                        android:textColor="@color/contents_text"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="26.5h"
+                        android:textColor="@color/contents_text"
+                        android:textSize="18sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:paddingRight="10dp"
+                    android:paddingLeft="10dp"
+                    android:paddingBottom="15dp"
+                    android:weightSum="3">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="关注"
+                        android:textColor="@color/gray_dark"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="积分"
+                        android:textColor="@color/gray_dark"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="累计收听"
+                        android:textColor="@color/gray_dark"
+                        android:textSize="12sp" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/personcenter_button_corners_bg">
+                <Button
+                    android:id="@+id/my_like_button"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:background="@drawable/my_button_top_selector"
+                    android:drawablePadding="10dp"
+                    android:paddingLeft="15dp"
+                    android:paddingRight="15dp"
+                    android:text="我的收藏"
+                    android:textAlignment="textStart"
+                    android:textColor="@color/contents_text"
+                    android:textSize="14sp"
+                    style="@style/Widget.AppCompat.Button.Borderless"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.2dp"
+                    android:layout_marginStart="15dp"
+                    android:background="@color/gray_light_light" />
+                <Button
+                    android:id="@+id/my_speech_button"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:background="@drawable/my_button_selector"
+                    android:drawablePadding="10dp"
+                    android:paddingLeft="15dp"
+                    android:paddingRight="15dp"
+                    android:text="我的语音"
+                    android:textAlignment="textStart"
+                    android:textColor="@color/contents_text"
+                    android:textSize="14sp"
+                    style="@style/Widget.AppCompat.Button.Borderless"/>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.2dp"
+                    android:layout_marginStart="15dp"
+                    android:background="@color/gray_light_light" />
+                <Button
+                    android:id="@+id/my_wallet_button"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:background="@drawable/my_button_selector"
+                    android:drawablePadding="10dp"
+                    android:paddingLeft="15dp"
+                    android:paddingRight="15dp"
+                    android:text="我的钱包"
+                    android:textAlignment="textStart"
+                    android:textColor="@color/contents_text"
+                    android:textSize="14sp"
+                    style="@style/Widget.AppCompat.Button.Borderless"/>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.2dp"
+                    android:layout_marginStart="15dp"
+                    android:background="@color/gray_light_light" />
+                <Button
+                    android:id="@+id/my_listen_record_button"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:background="@drawable/my_button_bottom_selector"
+                    android:drawablePadding="10dp"
+                    android:paddingLeft="15dp"
+                    android:paddingRight="15dp"
+                    android:text="收听记录"
+                    android:textAlignment="textStart"
+                    android:textColor="@color/contents_text"
+                    android:textSize="14sp"
+                    style="@style/Widget.AppCompat.Button.Borderless"/>
+            </LinearLayout>
+
+            <LinearLayout android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginBottom="15dp"
+                android:orientation="vertical"
+                android:background="@drawable/personcenter_button_corners_bg">
+                <Button
+                    android:id="@+id/server_button"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:drawablePadding="10dp"
+                    android:background="@drawable/my_button_top_selector"
+                    android:paddingLeft="15dp"
+                    android:paddingRight="15dp"
+                    android:text="配音服务"
+                    android:textAlignment="textStart"
+                    android:textColor="@color/contents_text"
+                    android:textSize="14sp"
+                    style="@style/Widget.AppCompat.Button.Borderless"/>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.2dp"
+                    android:layout_marginLeft="15dp"
+                    android:background="@color/gray_light_light" />
+                <Button
+                    android:id="@+id/open_platform_button"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:background="@drawable/my_button_selector"
+                    android:drawablePadding="10dp"
+                    android:paddingLeft="15dp"
+                    android:paddingRight="15dp"
+                    android:text="开放平台"
+                    android:textAlignment="textStart"
+                    android:textColor="@color/contents_text"
+                    android:textSize="14sp"
+                    style="@style/Widget.AppCompat.Button.Borderless"/>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.2dp"
+                    android:layout_marginLeft="15dp"
+                    android:background="@color/gray_light_light" />
+
+                <Button
+                    android:id="@+id/contact_us_button"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:background="@drawable/my_button_bottom_selector"
+                    android:drawablePadding="10dp"
+                    android:paddingLeft="15dp"
+                    android:paddingRight="15dp"
+                    android:text="问题反馈"
+                    android:textAlignment="textStart"
+                    android:textColor="@color/contents_text"
+                    android:textSize="14sp"
+                    style="@style/Widget.AppCompat.Button.Borderless"/>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

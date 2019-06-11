@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">耳界</string>
+<!--以耳为伍 不期而遇-->
+    <!--放耳听世界-->
+    <drawable name="my_button_normal">#ffffff</drawable>
+    <drawable name="my_button_pressed">#f1f1f1</drawable>
+</resources>

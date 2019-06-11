@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:background="@android:color/transparent"
+    android:weightSum="1">
+
+    <RelativeLayout
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:padding="10dp"
+        android:background="@drawable/clipboard_border"
+        android:id="@+id/linearLayout3">
+
+        <TextView
+            android:id="@+id/dialog_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15dp"
+            android:background="@android:color/transparent"
+            android:text="检测到复制内容，是否朗读？"
+            android:textStyle="bold"
+            android:textColor="@color/contents_text"
+            android:textSize="14sp" />
+
+        <LinearLayout
+            android:id="@+id/loading_layout"
+            android:layout_height="50dp"
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:visibility="gone"
+            android:gravity="center"
+            android:background="@color/white">
+            <com.wang.avi.AVLoadingIndicatorView
+                android:id="@+id/loading_view"
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                style="@style/AVLoadingIndicatorView"
+                app:indicatorName="LineScaleIndicator"
+                app:indicatorColor="@color/contents_text" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/copy_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/dialog_title"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="20dp"
+            android:background="@android:color/transparent"
+            android:lineSpacingExtra="8dp"
+            android:maxLines="3"
+            android:ellipsize="end"
+            android:text="我6月21号左右准备去三亚玩要一起吗"
+            android:textColor="@color/gray_dark"
+            android:textSize="14sp" />
+
+        <Button
+            android:id="@+id/synthetic_wav_button"
+            android:layout_below="@+id/copy_text_view"
+            android:layout_centerHorizontal="true"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="70dp"
+            android:layout_height="32dp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="5dp"
+            android:background="@drawable/wav_output_button_selector"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:text="朗读"
+            android:textColor="@color/white"
+            android:textSize="14sp" />
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/dialog_close"
+        android:layout_width="28dp"
+        android:layout_height="28dp"
+        android:layout_margin="18dp"
+        android:src="@drawable/icon_dialog_close" />
+
+</LinearLayout>

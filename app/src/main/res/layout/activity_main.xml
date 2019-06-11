@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context="com.nickole.earworld.main.MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:id="@+id/content"
+            android:layout_above="@+id/act_main_down_bg"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        </FrameLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.4dp"
+            android:layout_above="@+id/act_main_down_bg"
+            android:background="@color/gray_light_light" />
+
+        <LinearLayout
+            android:id="@+id/act_main_down_bg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:layout_alignParentBottom="true"
+            android:background="@android:color/white"
+            android:elevation="10dp"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:id="@+id/home_layout"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageButton
+                    android:id="@+id/home_button"
+                    android:layout_width="match_parent"
+                    android:layout_height="32dp"
+                    android:background="#00000000"
+                    android:clickable="false"
+                    android:scaleType="centerInside"
+                    app:srcCompat="@drawable/home_pressed" />
+
+                <TextView
+                    android:id="@+id/home_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="-1dp"
+                    android:text="听闻馆"
+                    android:textAlignment="center"
+                    android:textColor="@color/colorPrimaryBright"
+                    android:textSize="12sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/transform_layout"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageButton
+                    android:id="@+id/transform_button"
+                    android:layout_width="match_parent"
+                    android:layout_height="32dp"
+                    android:background="#00000000"
+                    android:clickable="false"
+                    android:scaleType="centerInside"
+                    app:srcCompat="@drawable/transform_normal" />
+
+                <TextView
+                    android:id="@+id/transform_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="-1dp"
+                    android:text="合声机"
+                    android:textAlignment="center"
+                    android:textColor="@color/gray_light"
+                    android:textSize="12sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/my_layout"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageButton
+                    android:id="@+id/my_button"
+                    android:layout_width="match_parent"
+                    android:layout_height="32dp"
+                    android:background="#00000000"
+                    android:clickable="false"
+                    android:scaleType="centerInside"
+                    app:srcCompat="@drawable/my_normal" />
+
+                <TextView
+                    android:id="@+id/my_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="-1dp"
+                    android:text="我的"
+                    android:textAlignment="center"
+                    android:textColor="@color/gray_light"
+                    android:textSize="12sp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </RelativeLayout>
+
+</android.support.constraint.ConstraintLayout>

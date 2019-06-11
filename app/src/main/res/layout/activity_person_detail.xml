@@ -1,0 +1,288 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@android:color/white"
+    tools:context="com.nickole.earworld.personcenter.PersonDetailActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/my_information_cover" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="-140dp">
+        <Button
+            android:id="@+id/my_information_go_back"
+            android:layout_width="26dp"
+            android:layout_height="26dp"
+            android:layout_marginLeft="15dp"
+            android:background="@drawable/icon_to_left" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="28dp"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="个人资料"
+            android:textStyle="bold"
+            android:textColor="@android:color/white"
+            android:textSize="16sp" />
+        <Button
+            android:id="@+id/modify_my_information_btn"
+            android:layout_width="26dp"
+            android:layout_height="26dp"
+            android:layout_marginRight="15dp"
+            android:background="@drawable/icon_modify" />
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="96dp"
+        android:layout_height="96dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="74dp">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/my_head_image"
+            android:layout_width="96dp"
+            android:layout_height="96dp"
+            android:layout_gravity="center"
+            android:adjustViewBounds="false"
+            android:cropToPadding="false"
+            android:src="@drawable/head_image"
+            app:civ_border_width="3dp"
+            app:civ_border_overlay="false"
+            app:civ_border_color="#ffffff"/>
+        <ImageView
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:layout_gravity="center"
+            android:src="@drawable/head_image_label" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="4dp"
+            android:layout_gravity="bottom|center_horizontal"
+            android:text="编辑"
+            android:textColor="@color/gray_light"
+            android:textSize="12sp" />
+    </FrameLayout>
+
+    <RelativeLayout android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/my_nickname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:text="Nickole"
+            android:textColor="@color/contents_text"
+            android:textSize="24sp" />
+
+        <ImageView
+            android:id="@+id/my_sex"
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="5dp"
+            android:layout_toEndOf="@+id/my_nickname"
+            android:src="@drawable/icon_boy"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@+id/my_nickname" />
+    </RelativeLayout>
+
+    <LinearLayout android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginBottom="25dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+        <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="简介："
+        android:textColor="@color/gray_dark"
+        android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/my_personalized_signature"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="写一句话介绍自己"
+            android:textColor="@color/gray_dark"
+            android:textSize="12sp" />
+
+        <ImageView
+            android:id="@+id/write_personalized_signature"
+            android:layout_width="12dp"
+            android:layout_height="12dp"
+            android:layout_marginStart="5dp"
+            android:src="@drawable/icon_write"
+            android:layout_marginLeft="5dp" />
+    </LinearLayout>
+
+
+
+            <Button
+                android:id="@+id/my_information"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:background="@drawable/my_button_top_selector"
+                android:drawablePadding="15dp"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:text="男　21岁　广东-广州"
+                android:textAlignment="textStart"
+                android:textColor="@color/contents_text"
+                android:textSize="14sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.2dp"
+                android:layout_marginStart="50dp"
+                android:layout_marginEnd="10dp"
+                android:background="@color/gray_light_light" />
+
+            <Button
+                android:id="@+id/my_job"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:background="@drawable/my_button_top_selector"
+                android:drawablePadding="15dp"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:text="学生"
+                android:textAlignment="textStart"
+                android:textColor="@color/contents_text"
+                android:textSize="14sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.2dp"
+                android:layout_marginStart="50dp"
+                android:layout_marginEnd="10dp"
+                android:visibility="gone"
+                android:background="@color/gray_light_light" />
+
+            <Button
+                android:id="@+id/my_company"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:background="@drawable/my_button_top_selector"
+                android:drawablePadding="15dp"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:text="点击编辑我的公司"
+                android:textAlignment="textStart"
+                android:textColor="@color/colorPrimary"
+                android:textSize="14sp"
+                android:visibility="gone"
+                style="@style/Widget.AppCompat.Button.Borderless"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.2dp"
+                android:layout_marginStart="50dp"
+                android:layout_marginEnd="10dp"
+                android:background="@color/gray_light_light" />
+
+            <Button
+                android:id="@+id/my_school"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:background="@drawable/my_button_top_selector"
+                android:drawablePadding="15dp"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:text="华南理工大学15级"
+                android:textAlignment="textStart"
+                android:textColor="@color/contents_text"
+                android:textSize="14sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.2dp"
+                android:layout_marginStart="50dp"
+                android:layout_marginEnd="10dp"
+                android:background="@color/gray_light_light" />
+
+            <Button
+                android:id="@+id/my_phone"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:background="@drawable/my_button_top_selector"
+                android:drawablePadding="15dp"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:text="13427521142"
+                android:textAlignment="textStart"
+                android:textColor="@color/contents_text"
+                android:textSize="14sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.2dp"
+                android:layout_marginStart="50dp"
+                android:layout_marginEnd="10dp"
+                android:background="@color/gray_light_light" />
+
+            <Button
+                android:id="@+id/my_wechat"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:background="@drawable/my_button_top_selector"
+                android:drawablePadding="15dp"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:text="yemao-Nick"
+                android:textAlignment="textStart"
+                android:textAllCaps="false"
+                android:textColor="@color/contents_text"
+                android:textSize="14sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.2dp"
+                android:layout_marginStart="50dp"
+                android:layout_marginEnd="10dp"
+                android:background="@color/gray_light_light" />
+
+            <Button
+                android:id="@+id/my_email"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:background="@drawable/my_button_top_selector"
+                android:drawablePadding="15dp"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:text="510788094@qq.com"
+                android:textAlignment="textStart"
+                android:textAllCaps="false"
+                android:textColor="@color/contents_text"
+                android:textSize="14sp" />
+
+
+</LinearLayout>

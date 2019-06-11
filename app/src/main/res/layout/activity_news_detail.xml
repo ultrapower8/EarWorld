@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.facebook.drawee.view.SimpleDraweeView
+        android:id="@+id/news_detail_background"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:alpha="0.15" />
+
+    <ImageView
+        android:id="@+id/news_detail_close_btn"
+        android:layout_width="28dp"
+        android:layout_height="28dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="20dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:src="@drawable/icon_close"
+        android:layout_alignParentStart="true" />
+
+    <ScrollView
+        android:layout_below="@id/news_detail_close_btn"
+        android:layout_above="@id/wav_play_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/news_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:lineSpacingExtra="8dp"
+                android:text="任正非：一个国家的强盛，是在小学教师的讲台上完成的"
+                android:textColor="@color/contents_text"
+                android:textSize="20sp" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_gravity="center_vertical"
+                android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/publish_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="昌邑市检察院"
+                android:layout_marginRight="10dp"
+                android:textColor="@color/colorPrimaryBright"
+                android:textSize="12sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="发布于"
+                android:textColor="@color/gray_dark"
+                android:textSize="12sp" />
+            <TextView
+                android:id="@+id/publish_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="15分钟前"
+                android:layout_marginRight="15dp"
+                android:textColor="@color/gray_dark"
+                android:textSize="12sp" />
+
+            <ImageView
+                android:layout_width="14dp"
+                android:layout_height="14dp"
+                android:layout_marginTop="1dp"
+                android:layout_marginRight="2dp"
+                android:layout_gravity="center"
+                android:background="@drawable/icon_comment" />
+
+            <TextView
+                android:id="@+id/comment_count"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="103"
+                android:textColor="@color/gray_dark"
+                android:textSize="12sp" />
+            </LinearLayout>
+
+            <com.facebook.drawee.view.SimpleDraweeView
+                android:id="@+id/news_image"
+                android:layout_width="match_parent"
+                android:layout_height="180dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="15dp"
+                fresco:roundedCornerRadius="8dp"
+            />
+
+            <TextView
+                android:id="@+id/news_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="15dp"
+                android:lineSpacingExtra="8dp"
+                android:text="\t\t\t\t5月21日下午2点30分，华为创始人、CEO任正非在华为总部接受了中央广播电视总台央视《面对面》记者董倩独家专访。在这场专访中，任正非虽然谈及了中美贸易，但更多的篇幅大谈特谈基础教育话题。4个月前，任正非首次接受国内电视媒体专访，专访记者同样是央视《面对面》记者董倩，在那场专访中，任正非特意引用了一个说法：“一个国家的强盛，是在小学教师的讲台上完成的”。在5月21日的独家专访中，基础教育成了最大的关键词，央视新闻梳理了剧透版《面对面》重磅内容，以飨广大关心华为及任正非的网友。华为不死中央广播电视总台央视《面对面》记者董倩：今天您之所以答应给我们这次访谈的机会，前提是我们要谈教育。我特别好奇是外界所有人都在担忧华为如此生死攸关的时刻，在担忧华为未来应该怎么办、能不能活下去的时候，您反而有点超然世外，要谈教育，教育为什么是您最关心的事，为什么？任正非：从来没有觉得我们会死亡，我们做了2万个奖牌在做，上面写的是“不死的华为”。芯片备胎背后有故事 华为差一点卖给美国公司董倩：为什么在2004年设立海思这样一个部门？任正非：这个部门也没有什么，就是一个部门，部门为什么叫这个名字？我也不知道，这个名字自己起的。董倩：无论叫什么，存在的目的？任正非：每个部门都有存在的目的，它的目的是做芯片，2012实验室还要做很多其他东西。海思只是2012实验室的一个下属机构。董倩：2004年甚至更早的时候中美关系一切正常、国际供应链一切正常，为什么要预想假如这个世界不正常怎么办？任正非：我们曾经准备用100亿美金把这个公司卖给美国公司，卖给人家时合同也签订了，所有手续办完了，两个团队买了花衣服，大家穿着花衣服去海滩上比赛跑步、比赛打乒乓球，这个时候该美国公司发生变化，新董事长否决了收购，（我们）回来讨论还卖不卖？我在我们公司是投降派、妥协派，什么事情都想让一让，少壮派激进派坚决不卖了，我就说十年之后和美国在山头上遭遇，我们肯定拼不过他们刺刀，他们爬南坡时是带着牛肉咖啡爬坡，我们带着干粮爬坡，可能到山上不如人家"
+                android:textColor="@color/contents_text_light"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/wav_play_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="15dp"
+        android:layout_alignParentBottom="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp">
+
+            <TextView
+                android:id="@+id/wav_current_time_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="20dp"
+                android:text="00:02"
+                android:textColor="@color/contents_text_light"
+                android:textSize="12sp" />
+
+            <SeekBar
+                android:id="@+id/play_seek_bar"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1" />
+
+            <TextView
+                android:id="@+id/wav_all_time_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginRight="20dp"
+                android:text="01:00"
+                android:textColor="@color/contents_text_light"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <Button
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="35dp"
+                android:background="@drawable/icon_collect" />
+
+            <Space
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_width="0dp" />
+
+            <Button
+                android:id="@+id/wav_previous_button"
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                android:layout_gravity="center"
+                android:background="@drawable/icon_previous" />
+
+            <Button
+                android:id="@+id/wav_play_or_stop_button"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_marginLeft="35dp"
+                android:layout_marginRight="35dp"
+                android:layout_gravity="center"
+                android:background="@drawable/icon_big_play_selector" />
+
+            <Button
+                android:id="@+id/wav_next_button"
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                android:layout_gravity="center"
+                android:background="@drawable/icon_next" />
+
+            <Space
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_width="0dp" />
+
+            <Button
+                android:id="@+id/save_wav_button"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_gravity="center"
+                android:layout_marginRight="35dp"
+                android:background="@drawable/icon_save" />
+
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>
